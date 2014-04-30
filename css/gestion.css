@@ -1,0 +1,80 @@
+/* Reset los estilos */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,
+fieldset, textarea, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+address, article, aside, audio, canvas, command, datalist, details, dialog, figure, figcaption, footer, header, hgroup,
+keygen, mark, meter, menu, nav, progress, ruby, section, time, video, article, section {
+	margin: 0;  padding: 0;  border: 0;  outline: 0;  font-weight: inherit;  font-style: inherit;
+  	font-size: 100%;  font-family: inherit;  vertical-align: baseline;
+}
+
+body {
+	background-color:silver;
+	background-image: url('../imagenes/fondo.jpg');
+	font-size:0.9em;
+	color:#08298A;
+	margin:5px auto; /*arriba y abajo 5px, dcha e izq auto. */
+	text-align:center;
+	width:99%;
+}
+.lienzo {
+	width:700px;
+	margin:5px auto;
+	padding:0px 10px;
+	border: 1px solid #0088FF;
+	border-radius:8px; -webkit-border-radius:.8em; -moz-border-radius:.8em; 
+	background:#fff;
+	display:table;
+}
+.tabla{ display: table; }
+.fila {	display: table-row; }
+.celda{	display: table-cell; }
+
+header .celda{ 	vertical-align: middle; text-align: center; }
+
+#celda-logo{ width: 160px; text-align: left;}
+#celda-titular{ width: 300px;  font-size: 2em}
+#celda-salir{ width: 160px; text-align: right; }
+#icono-salir{ width: 32px; }
+
+footer { text-align: right; font-size:0.6em; padding-right: 10px; }
+
+/* FORMULARIOS */
+input, select{
+	height:16px;
+	border: 1px solid #0088ff;
+}
+textarea{
+	border: 1px solid #0088ff;
+}
+label{ font-size: 0.8em;}
+button{ 
+	height: 1.7em; font-size: 0.8em; padding:1px;
+	background-color: #0088FF; color: white;
+}
+.botonImagen{ 
+	height: 30px; font-size: 0.8em; padding:0px; margin:0px;
+	background-color: #FFFFFF; color: white;
+}
+
+.divResultados table{ border-collapse: collapse;}
+.divResultados table th{border: 2px solid white; padding: 0px 5px;
+			text-align: center; background-color:#5ce; color: black;}
+.divResultados table td{border: 1px solid #0088FF; padding: 0px 5px;
+			text-align: left;}
+fieldset{
+ 	width: auto;	
+	margin: auto;
+ 	text-align: left;
+ 	padding:5px 10px;
+	border: 1px solid #0088FF;
+	border-radius:8px; -webkit-border-radius:.8em; -moz-border-radius:.8em; 
+}
+.parrafo-izquierda{
+	text-align:left;
+}
+.titulo-modulo{
+	font-size: 1.2em;
+	font-weight: bold;
+}

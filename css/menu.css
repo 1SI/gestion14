@@ -1,0 +1,47 @@
+.menu {
+	font-size: 12pt;
+}
+
+.menu ul {
+	list-style: none;
+}
+
+.menu li {
+	float: left; padding: 0;
+}
+
+.menu li ul{
+	display: none;
+	position: absolute; /* Posición absoluta, para que aparezca por encima de lo que ya hay */
+}
+
+.menu li:hover ul {
+	display: block;
+}
+
+
+.menu li a {
+	display: block;
+	line-height: 20px;
+	padding: 0px 10px;
+	text-decoration: none;
+	color: #08298A;
+}
+
+/* Color de fondo de los menús */
+.menu li:hover a{
+	background: #58acfa;
+	color: #ffffff;
+}
+
+/* Para que los menús aparezcan en vertical */ 
+.menu li li {
+	display: block;
+	float: none;
+}
+
+/* Cambia el color del fondo al pasar el ratón por encima */
+.menu li ul li:hover a {
+	background: #08298a;
+	
+}
