@@ -1,4 +1,6 @@
 
+
+
 <?php 
 	/*
 	 * Session_start es necesaria para poder acceder a la variable $_SESSION. 
@@ -43,10 +45,19 @@
 	</article>
 	<article id="ar-contenido" class="lienzo">
 	<?php 
-		$controlador=$_GET['c'].'C'; 
-		require_once 'controladores/'.$controlador.'.php';
-		$objModulo = new $controlador();
-		$objModulo->getVistaPrincipal();
+	
+		/**
+		 * Carga el fichero del controlador 
+		 * @var unknown_type
+		 */
+	if (isset($_GET['c'])){ // Comprueba que existe la variable 'c' en la URL
+		$controlador=$_GET['c'].'C'; // Pilla la variable "c" que está en la URL y le añade C
+		if (file_exists('controladores/'.$controlador.'.php')){ // Comprueba que exista la clase antes de crear el objeto
+			require_once 'controladores/'.$controlador.'.php'; // Importa el código del controlador
+			$objModulo = new $controlador(); // Crea el objeto del controlador
+			$objModulo->getVistaPrincipal(); // Llama al método getVistaPrincipal del controlador. Como poner Objeto.metodo() en Java. Lo mismo. 
+		}
+	}
 	?>
 
 	</article>
